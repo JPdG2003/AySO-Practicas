@@ -1,0 +1,6 @@
+-- crear contenedor --
+docker run nginx 
+
+-- entrar al contenedor y ver sus archivos --
+docker exec -it id bash
+

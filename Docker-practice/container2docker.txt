@@ -1,0 +1,10 @@
+-- creamos contenedor con img nginx --
+docker run -d nginx 
+
+-- vermos estado --
+docker ps -a
+
+-- eliminamos --
+docker stop id/nombre_archivo
+
+docker rm id/nombre_archivo 
