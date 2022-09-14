@@ -1,0 +1,13 @@
+-- crear contenedor con imagen --
+docker run -d id/nombre
+
+-- intento de borrardo -- 
+docker images -- ver imagenes --
+docker rmi id -- borrar img --
+
+* nos tira error porque el container 
+sigue activo
+
+-- stopeamos y eliminamos container --
+docker stop id/nombre-container
+docker rm -fv id/nombre-container

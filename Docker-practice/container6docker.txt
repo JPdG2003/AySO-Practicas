@@ -1,0 +1,18 @@
+-- crear un dockerfile --
+vim Dockerfile 
+
+-- dentro, reemplazamos por html --
+FROM nginx 
+WORKDIR /usr/share/nginx/html
+COPY index.html .
+:wq!
+
+-- corremos --
+-- Buildear la imagen y ponerle un tag --
+docker build -t nginx_img
+
+-- Crear un contenedor con esa imagen y levantarlo en un puerto --
+docker run -dp 80:80 nginx_img
+
+-- abrimos en navegador --
+localhost:80

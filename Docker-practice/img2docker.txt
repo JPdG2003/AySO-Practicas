@@ -1,0 +1,6 @@
+-- mirar las imagenes --
+docker image ls = images
+
+-- eliminar una imagen --
+
+docker rmi id-imagen 
